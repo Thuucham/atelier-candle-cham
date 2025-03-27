@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap');
+
+body {
+    background: none !important;
+    background-color: #f5e6cc !important; /* 淡い茶色 */
+}
+
+
+header {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.top-bar h1 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Kiwi Maru', serif;
+    color: #5a4a42;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5a4a42;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-family: 'Kiwi Maru', serif;
+}
+
+nav ul li a:hover {
+    color: #a38b7b;
+}
+
+.banner {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.banner-container {
+    position: relative;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+.banner-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Kiwi Maru', serif;
+}
+
+
+.sale {
+    text-align: center;
+    background-color: #d9534f;
+    color: white;
+    padding: 15px;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.products {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    text-align: center;
+}
+
+.product img,
+.product video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.product p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #5a4a42;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.button {
+    display: inline-block;
+    background: #a38b7b;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.button:hover {
+    background: #8c7468;
+}
+
+footer {
+    text-align: center;
+    background-color: #5a4a42;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: 'Kiwi Maru', serif;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .top-bar h1 {
+        font-size: 24px;
+    }
+    .banner-title {
+        font-size: 20px;
+        padding: 10px 20px;
+    }
+    .products {
+        padding: 20px;
+    }
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        width: 90%;
+    }
+}
